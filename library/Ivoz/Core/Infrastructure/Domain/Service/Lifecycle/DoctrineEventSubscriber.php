@@ -332,11 +332,13 @@ class DoctrineEventSubscriber implements EventSubscriber
     }
 
     /**
+     * @param EntityInterface $entity
+     * @param \Exception $exception
      * @return void
+     * @throws \Exception
      */
     private function handleError(EntityInterface $entity, \Exception $exception)
     {
-        $event = LifecycleEventHandlerInterface::EVENT_ON_ERROR;
         $serviceCollection = LifecycleServiceHelper::getServiceNameByEntity($entity);
         if ($this->serviceContainer->has($serviceCollection)) {
             $errorHandler = $this->serviceContainer->get($serviceCollection);

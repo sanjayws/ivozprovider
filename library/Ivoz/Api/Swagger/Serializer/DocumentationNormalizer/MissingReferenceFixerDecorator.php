@@ -156,7 +156,7 @@ class MissingReferenceFixerDecorator implements NormalizerInterface
      * @param string           $resourceClass
      * @param array|null       $serializerContext
      *
-     * @return string
+     * @return string | null
      */
     private function getDefinition(\ArrayObject $definitions, ResourceMetadata $resourceMetadata, string $resourceClass, array $serializerContext = null): string
     {

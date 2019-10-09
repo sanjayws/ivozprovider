@@ -60,6 +60,7 @@ class UpdateByTerminal implements TerminalLifecycleEventHandlerInterface
                 ->setSendDiversion('yes')
                 ->setSendPai('yes');
         } else {
+            /** @var PsEndpointDto $endpointDto */
             $endpointDto = $this->entityTools->entityToDto($endpoint);
         }
 

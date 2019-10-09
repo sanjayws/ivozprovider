@@ -3,6 +3,7 @@
 namespace Ivoz\Ast\Domain\Service\Queue;
 
 use Ivoz\Ast\Domain\Model\Queue\Queue;
+use Ivoz\Ast\Domain\Model\Queue\QueueDto;
 use Ivoz\Core\Application\Service\EntityTools;
 use Ivoz\Provider\Domain\Model\Locution\LocutionDto;
 use Ivoz\Provider\Domain\Service\Queue\QueueLifecycleEventHandlerInterface
@@ -66,6 +67,7 @@ class UpdateByIvozQueue implements IvozQueueLifecycleEventHandlerInterface
             $entity->getId()
         );
 
+        /** @var QueueDto $astQueueDto */
         $astQueueDto = is_null($astQueue)
             ? Queue::createDto()
             : $this->entityTools->entityToDto($astQueue);

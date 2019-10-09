@@ -2,6 +2,7 @@
 
 namespace Ivoz\Ast\Domain\Service\PsEndpoint;
 
+use Ivoz\Ast\Domain\Model\PsEndpoint\PsEndpointDto;
 use Ivoz\Ast\Domain\Model\PsEndpoint\PsEndpointRepository;
 use Ivoz\Core\Application\Service\EntityTools;
 use Ivoz\Ast\Domain\Model\PsEndpoint\PsEndpoint;
@@ -58,7 +59,8 @@ class UpdateByRetailAccount implements RetailAccountLifecycleEventHandlerInterfa
                 ->setSendDiversion('yes')
                 ->setSendPai('yes');
         } else {
-            $endpointDto  = $this->entityTools->entityToDto($endpoint);
+            /** @var PsEndpointDto $endpointDto */
+            $endpointDto = $this->entityTools->entityToDto($endpoint);
         }
 
         // Use company domain if retail account from-domain not set

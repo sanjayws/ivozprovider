@@ -75,11 +75,11 @@ class Company extends CompanyAbstract implements CompanyInterface
             );
         }
 
-        if (!$this->getIpFilter()) {
+        if (!boolval($this->getIpFilter())) {
             $this->setIpFilter(0);
         }
 
-        if (!$this->getOnDemandRecord()) {
+        if (!boolval($this->getOnDemandRecord())) {
             $this->setOnDemandRecord(0);
         }
 
@@ -289,7 +289,7 @@ class Company extends CompanyAbstract implements CompanyInterface
             $domainUsers = trim($domainUsers);
         }
 
-        if ($this->getType() === self::VPBX && empty($domainUsers)) {
+        if ($this->getType() === CompanyInterface::TYPE_VPBX && empty($domainUsers)) {
             throw new \DomainException("Domain can't be empty", self::EMPTY_DOMAIN_EXCEPTION);
         }
 

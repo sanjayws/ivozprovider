@@ -33,6 +33,7 @@ class CreateOrUpdateByTrunksCdr
         TrunksCdrInterface $trunksCdr,
         BillableCallInterface $billableCall = null
     ) {
+        /** @var BillableCallDto $billableCallDto */
         $billableCallDto = $billableCall
             ? $this->entityTools->entityToDto($billableCall)
             : BillableCall::createDto();

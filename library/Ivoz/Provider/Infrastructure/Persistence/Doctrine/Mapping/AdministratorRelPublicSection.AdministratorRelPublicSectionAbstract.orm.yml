@@ -1,0 +1,32 @@
+Ivoz\Provider\Domain\Model\AdministratorRelPublicSection\AdministratorRelPublicSectionAbstract:
+  type: mappedSuperclass
+  uniqueConstraints:
+    administratorRelPublicSection_administrator_publicSection:
+      columns:
+        - administratorId
+        - publicSectionId
+  manyToOne:
+    administrator:
+      targetEntity: \Ivoz\Provider\Domain\Model\Administrator\AdministratorInterface
+      cascade: {  }
+      fetch: LAZY
+      mappedBy: null
+      inversedBy: relPublicSections
+      joinColumns:
+        administratorId:
+          referencedColumnName: id
+          nullable: false
+          onDelete: cascade
+      orphanRemoval: false
+    publicSection:
+      targetEntity: \Ivoz\Provider\Domain\Model\AdministratorRelPublicSection\AdministratorRelPublicSectionInterface
+      cascade: {  }
+      fetch: LAZY
+      mappedBy: null
+      inversedBy: null
+      joinColumns:
+        publicSectionId:
+          referencedColumnName: id
+          nullable: false
+          onDelete: cascade
+      orphanRemoval: false

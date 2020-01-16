@@ -12,3 +12,7 @@ Ivoz\Provider\Domain\Model\Administrator\Administrator:
       id: true
       generator:
         strategy: IDENTITY
+  oneToMany:
+    relPublicSections:
+      targetEntity: Ivoz\Provider\Domain\Model\AdministratorRelPublicSection\AdministratorRelPublicSectionInterface
+      mappedBy: administrator

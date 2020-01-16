@@ -3,6 +3,8 @@
 namespace Ivoz\Provider\Domain\Model\Administrator;
 
 use Ivoz\Core\Domain\Model\LoggableEntityInterface;
+use Doctrine\Common\Collections\Criteria;
+use Doctrine\Common\Collections\ArrayCollection;
 
 interface AdministratorInterface extends LoggableEntityInterface
 {
@@ -70,6 +72,13 @@ interface AdministratorInterface extends LoggableEntityInterface
     public function getActive();
 
     /**
+     * Get restricted
+     *
+     * @return boolean
+     */
+    public function getRestricted();
+
+    /**
      * Get name
      *
      * @return string | null
@@ -123,6 +132,37 @@ interface AdministratorInterface extends LoggableEntityInterface
      * @return static
      */
     public function setTimezone(\Ivoz\Provider\Domain\Model\Timezone\TimezoneInterface $timezone = null);
+
+    /**
+     * Add relPublicSection
+     *
+     * @param \Ivoz\Provider\Domain\Model\AdministratorRelPublicSection\AdministratorRelPublicSectionInterface $relPublicSection
+     *
+     * @return static
+     */
+    public function addRelPublicSection(\Ivoz\Provider\Domain\Model\AdministratorRelPublicSection\AdministratorRelPublicSectionInterface $relPublicSection);
+
+    /**
+     * Remove relPublicSection
+     *
+     * @param \Ivoz\Provider\Domain\Model\AdministratorRelPublicSection\AdministratorRelPublicSectionInterface $relPublicSection
+     */
+    public function removeRelPublicSection(\Ivoz\Provider\Domain\Model\AdministratorRelPublicSection\AdministratorRelPublicSectionInterface $relPublicSection);
+
+    /**
+     * Replace relPublicSections
+     *
+     * @param ArrayCollection $relPublicSections of Ivoz\Provider\Domain\Model\AdministratorRelPublicSection\AdministratorRelPublicSectionInterface
+     * @return static
+     */
+    public function replaceRelPublicSections(ArrayCollection $relPublicSections);
+
+    /**
+     * Get relPublicSections
+     * @param Criteria | null $criteria
+     * @return \Ivoz\Provider\Domain\Model\AdministratorRelPublicSection\AdministratorRelPublicSectionInterface[]
+     */
+    public function getRelPublicSections(\Doctrine\Common\Collections\Criteria $criteria = null);
 
     /**
      * @see AdvancedUserInterface::getRoles()

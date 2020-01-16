@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "6ec01d528c6cd968433ec3a6c0f48c06",
+    "content-hash": "bd0b8b2651d55ea03680e5a3447556ea",
     "packages": [
         {
             "name": "api-platform/core",
@@ -1853,16 +1853,16 @@
         },
         {
             "name": "irontec/ivoz-core-bundle",
-            "version": "2.2",
+            "version": "2.3-rc",
             "source": {
                 "type": "git",
                 "url": "https://github.com/irontec/ivoz-core-bundle.git",
-                "reference": "56d246a344bed9fbfb06a717293f76b44b5c0470"
+                "reference": "1aed75a07514075390cc1f6e201e7177b5e7dc1a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/irontec/ivoz-core-bundle/zipball/56d246a344bed9fbfb06a717293f76b44b5c0470",
-                "reference": "56d246a344bed9fbfb06a717293f76b44b5c0470",
+                "url": "https://api.github.com/repos/irontec/ivoz-core-bundle/zipball/1aed75a07514075390cc1f6e201e7177b5e7dc1a",
+                "reference": "1aed75a07514075390cc1f6e201e7177b5e7dc1a",
                 "shasum": ""
             },
             "require": {
@@ -1900,7 +1900,7 @@
                 }
             ],
             "description": "Symfony bridge for ivoz-core",
-            "time": "2020-01-16T08:18:31+00:00"
+            "time": "2020-01-17T13:32:06+00:00"
         },
         {
             "name": "irontec/ivoz-dev-tools",
@@ -1948,6 +1948,47 @@
             ],
             "description": "DevTools for ivozprovider",
             "time": "2020-02-03T15:15:11+00:00"
+        },
+        {
+            "name": "irontec/ivoz-provider-bundle",
+            "version": "2",
+            "dist": {
+                "type": "path",
+                "url": "./composer-packages/irontec/ivoz-provider-bundle",
+                "reference": "75ae0682f93f361b99582b6845b881f89cb1d972",
+                "shasum": null
+            },
+            "require": {
+                "irontec/ivoz-core-bundle": "^2.2",
+                "php": ">=7.0.19"
+            },
+            "type": "symfony-bundle",
+            "autoload": {
+                "psr-4": {
+                    "Ivoz\\ProviderBundle\\": ""
+                }
+            },
+            "license": [
+                "GPL-3.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Carlos Cruz",
+                    "email": "carlos@irontec.com"
+                },
+                {
+                    "name": "Ivan Alonso",
+                    "email": "kaian@irontec.com"
+                },
+                {
+                    "name": "Mikel Madariaga",
+                    "email": "mikel@irontec.com"
+                }
+            ],
+            "description": "Symfony bridge for IvozProvider",
+            "transport-options": {
+                "symlink": true
+            }
         },
         {
             "name": "jdorn/sql-formatter",
@@ -8058,7 +8099,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "irontec/ivoz-core-bundle": 5
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {

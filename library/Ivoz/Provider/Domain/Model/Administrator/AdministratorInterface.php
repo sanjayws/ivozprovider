@@ -84,15 +84,6 @@ interface AdministratorInterface extends LoggableEntityInterface
     public function getLastname();
 
     /**
-     * Set brand
-     *
-     * @param \Ivoz\Provider\Domain\Model\Brand\BrandInterface $brand | null
-     *
-     * @return static
-     */
-    public function setBrand(\Ivoz\Provider\Domain\Model\Brand\BrandInterface $brand = null);
-
-    /**
      * Get brand
      *
      * @return \Ivoz\Provider\Domain\Model\Brand\BrandInterface | null
@@ -100,29 +91,11 @@ interface AdministratorInterface extends LoggableEntityInterface
     public function getBrand();
 
     /**
-     * Set company
-     *
-     * @param \Ivoz\Provider\Domain\Model\Company\CompanyInterface $company | null
-     *
-     * @return static
-     */
-    public function setCompany(\Ivoz\Provider\Domain\Model\Company\CompanyInterface $company = null);
-
-    /**
      * Get company
      *
      * @return \Ivoz\Provider\Domain\Model\Company\CompanyInterface | null
      */
     public function getCompany();
-
-    /**
-     * Set timezone
-     *
-     * @param \Ivoz\Provider\Domain\Model\Timezone\TimezoneInterface $timezone | null
-     *
-     * @return static
-     */
-    public function setTimezone(\Ivoz\Provider\Domain\Model\Timezone\TimezoneInterface $timezone = null);
 
     /**
      * @see AdvancedUserInterface::getRoles()

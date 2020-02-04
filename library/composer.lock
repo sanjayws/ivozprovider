@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "6ec01d528c6cd968433ec3a6c0f48c06",
+    "content-hash": "f7ced1f3c6a3ecd3176ed1d813c9d3b5",
     "packages": [
         {
             "name": "api-platform/core",
@@ -1904,16 +1904,16 @@
         },
         {
             "name": "irontec/ivoz-dev-tools",
-            "version": "2.5",
+            "version": "dev-protected-setters",
             "source": {
                 "type": "git",
                 "url": "https://github.com/irontec/ivoz-dev-tools.git",
-                "reference": "77862369461e16492782e834f043a966a7c07300"
+                "reference": "1357b7f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/irontec/ivoz-dev-tools/zipball/77862369461e16492782e834f043a966a7c07300",
-                "reference": "77862369461e16492782e834f043a966a7c07300",
+                "url": "https://api.github.com/repos/irontec/ivoz-dev-tools/zipball/1357b7f",
+                "reference": "1357b7f",
                 "shasum": ""
             },
             "require": {
@@ -1928,7 +1928,6 @@
                     "IvozDevTools\\": ""
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "GPL-3.0-or-later"
             ],
@@ -1947,7 +1946,11 @@
                 }
             ],
             "description": "DevTools for ivozprovider",
-            "time": "2020-02-05T11:09:07+00:00"
+            "support": {
+                "source": "https://github.com/irontec/ivoz-dev-tools/tree/protected-setters",
+                "issues": "https://github.com/irontec/ivoz-dev-tools/issues"
+            },
+            "time": "2020-02-05T12:36:09+00:00"
         },
         {
             "name": "jdorn/sql-formatter",
@@ -8057,8 +8060,10 @@
         }
     ],
     "aliases": [],
-    "minimum-stability": "stable",
-    "stability-flags": [],
+    "minimum-stability": "dev",
+    "stability-flags": {
+        "irontec/ivoz-dev-tools": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {

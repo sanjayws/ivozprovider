@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "034a25188c4c47187bc427b8e46d2d8d",
+    "content-hash": "0c97abde245b55d58e39b90aaf4fdf3c",
     "packages": [
         {
             "name": "api-platform/core",
@@ -1807,11 +1807,11 @@
         },
         {
             "name": "irontec/ivoz-dev-tools",
-            "version": "2.5.0.0",
+            "version": "dev-1357b7f716807ab97cf18e732d2059344f3a6ea7",
             "dist": {
                 "type": "path",
                 "url": "../library/vendor/irontec/ivoz-dev-tools",
-                "reference": "77862369461e16492782e834f043a966a7c07300",
+                "reference": "1357b7f716807ab97cf18e732d2059344f3a6ea7",
                 "shasum": null
             },
             "require": {
@@ -5703,7 +5703,9 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "irontec/ivoz-dev-tools": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {

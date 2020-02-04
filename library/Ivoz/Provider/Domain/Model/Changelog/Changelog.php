@@ -34,6 +34,18 @@ class Changelog extends ChangelogAbstract implements LoggerEntityInterface, Chan
     }
 
     /**
+     * Set command
+     *
+     * @param \Ivoz\Provider\Domain\Model\Commandlog\CommandlogInterface $command
+     *
+     * @return static
+     */
+    public function setCommand(\Ivoz\Provider\Domain\Model\Commandlog\CommandlogInterface $command)
+    {
+        return parent::setCommand($command);
+    }
+
+    /**
      * Get id
      * @codeCoverageIgnore
      * @return string

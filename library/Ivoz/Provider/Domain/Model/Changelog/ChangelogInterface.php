@@ -14,6 +14,15 @@ interface ChangelogInterface extends LoggerEntityInterface, EntityInterface
     public static function fromEvent(\Ivoz\Core\Domain\Event\EntityEventInterface $event);
 
     /**
+     * Set command
+     *
+     * @param \Ivoz\Provider\Domain\Model\Commandlog\CommandlogInterface $command
+     *
+     * @return static
+     */
+    public function setCommand(\Ivoz\Provider\Domain\Model\Commandlog\CommandlogInterface $command);
+
+    /**
      * Get entity
      *
      * @return string

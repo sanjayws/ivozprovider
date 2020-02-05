@@ -1261,11 +1261,11 @@
         },
         {
             "name": "irontec/ivoz-core",
-            "version": "2.1.1.0",
+            "version": "2.3.2.0",
             "dist": {
                 "type": "path",
                 "url": "../../library/vendor/irontec/ivoz-core",
-                "reference": "890f835828cdc82de16eb3c6b3befe6c3ec1b7ac",
+                "reference": "123f7aa3dc8ecaac6a801b9860dda192ce8f541b",
                 "shasum": null
             },
             "require": {

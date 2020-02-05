@@ -39,6 +39,10 @@
         },
         {
             "type": "vcs",
+            "url": "https://github.com/irontec/ivoz-core"
+        },
+        {
+            "type": "vcs",
             "url": "https://github.com/irontec/ivoz-core-bundle"
         },
         {
@@ -67,7 +71,9 @@
         "doctrine/doctrine-migrations-bundle": "^1.2",
         "h4cc/wkhtmltopdf-amd64": "0.12.3",
         "incenteev/composer-parameter-handler": "^2.0",
+        "irontec/ivoz-api": "2.2",
         "irontec/ivoz-api-bundle": "^2.0",
+        "irontec/ivoz-core": "2.3.2",
         "irontec/ivoz-core-bundle": "^2.0",
         "irontec/ivoz-dev-tools": "dev-protected-setters#1357b7f",
         "knplabs/knp-snappy": "0.4.3",

@@ -1542,11 +1542,11 @@
         },
         {
             "name": "irontec/ivoz-api",
-            "version": "2.1.0.0",
+            "version": "2.2.0.0",
             "dist": {
                 "type": "path",
                 "url": "../../../library/vendor/irontec/ivoz-api",
-                "reference": "4c1301bb263b58a3db830cb6bb5cd3cc51ec0669",
+                "reference": "a9a96c0b4eba6ba233948fc346750dba8446faef",
                 "shasum": null
             },
             "require": {
@@ -1554,7 +1554,7 @@
                 "gesdinet/jwt-refresh-token-bundle": "^0.6.2",
                 "graze/guzzle-jsonrpc": "3.2.*",
                 "guzzlehttp/guzzle": "^6.3",
-                "irontec/ivoz-core": "^2.0",
+                "irontec/ivoz-core": "^2.3",
                 "lexik/jwt-authentication-bundle": "^2.5",
                 "php": ">=7.0.19",
                 "symfony/expression-language": "3.4.*",
@@ -1639,11 +1639,11 @@
         },
         {
             "name": "irontec/ivoz-core",
-            "version": "2.1.1.0",
+            "version": "2.3.2.0",
             "dist": {
                 "type": "path",
                 "url": "../../../library/vendor/irontec/ivoz-core",
-                "reference": "890f835828cdc82de16eb3c6b3befe6c3ec1b7ac",
+                "reference": "123f7aa3dc8ecaac6a801b9860dda192ce8f541b",
                 "shasum": null
             },
             "require": {
@@ -6096,7 +6096,7 @@
         },
         {
             "name": "symfony/phpunit-bridge",
-            "version": "3.4.32.0",
+            "version": "3.4.36.0",
             "dist": {
                 "type": "path",
                 "url": "../../../library/vendor/symfony/phpunit-bridge",
